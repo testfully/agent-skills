@@ -155,6 +155,20 @@ Use these APIs to read and update variables from the active environment.
 
 See [`references/environment.md`](references/environment.md).
 
+### Folder And Collection Variables
+
+Use these APIs to read and update variables from the parent folder or
+collection.
+
+- `$.parentFolder.variables.*` - Work with variables on the request's parent
+  folder.
+- `$.rootFolder.variables.*` - Work with collection variables.
+- `pm.collectionVariables.*` - Postman-compatible aliases for
+  `$.rootFolder.variables.*`.
+
+See
+[`references/folder-collection-variables.md`](references/folder-collection-variables.md).
+
 ### Collection Runner Flow Control
 
 Use these APIs to choose which request runs next while a collection is running
@@ -178,6 +192,7 @@ effectively in your scripts.
 ```
 references/console.md
 references/environment.md
+references/folder-collection-variables.md
 references/globals.md
 references/request.md
 references/response.md
