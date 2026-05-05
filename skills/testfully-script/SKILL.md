@@ -122,6 +122,23 @@ Response scripts.
 
 See [`references/response-cookies.md`](references/response-cookies.md).
 
+### Global Variables
+
+Use these APIs to read and update workspace-level global variables from scripts.
+
+- `$.globals.get(name)` - Get a global variable value.
+- `$.globals.has(name)` - Check whether a global variable exists.
+- `$.globals.set(name, value)` - Set a global variable value.
+- `$.globals.unset(name)` - Remove a global variable.
+- `$.globals.clear()` - Remove all global variables.
+- `$.globals.toObject()` - Return global variables as an object.
+- `pm.globals.*` - Postman-compatible aliases for `$.globals.*`.
+- `postman.*GlobalVariable(...)` - Legacy Postman-compatible global variable
+  helpers.
+- `globals` - Legacy global object containing global variable values.
+
+See [`references/globals.md`](references/globals.md).
+
 ### Collection Runner Flow Control
 
 Use these APIs to choose which request runs next while a collection is running
@@ -144,6 +161,7 @@ effectively in your scripts.
 
 ```
 references/console.md
+references/globals.md
 references/request.md
 references/response.md
 references/response-cookies.md
