@@ -126,6 +126,19 @@ Response scripts.
 
 See [`references/testing-assertions.md`](references/testing-assertions.md).
 
+### Postman Script Info
+
+Use this Postman-compatible object to inspect basic script execution metadata.
+
+- `pm.info` - Access script execution metadata.
+- `pm.info.eventName` - Read the current script phase.
+- `pm.info.requestName` - Read the current request name.
+- `pm.info.requestId` - Read the current request id.
+- `pm.info.iteration` - Read the current iteration number.
+- `pm.info.iterationCount` - Read the total iteration count.
+
+See [`references/pm-info.md`](references/pm-info.md).
+
 ### Multi-Step Requests
 
 Use this API to read request and response data from completed steps in a
@@ -264,6 +277,7 @@ references/folder-collection-variables.md
 references/global-this.md
 references/globals.md
 references/npm-packages.md
+references/pm-info.md
 references/request.md
 references/response.md
 references/response-cookies.md
