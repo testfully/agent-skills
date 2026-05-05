@@ -169,6 +169,18 @@ collection.
 See
 [`references/folder-collection-variables.md`](references/folder-collection-variables.md).
 
+### npm Packages
+
+Use standard ES module imports to load public npm packages that work in a
+browser-style JavaScript sandbox.
+
+- `import value from "package-name"` - Import a package default export.
+- `import { value } from "package-name"` - Import named exports.
+- `import value from "package-name@version"` - Import a specific package
+  version.
+
+See [`references/npm-packages.md`](references/npm-packages.md).
+
 ### Collection Runner Flow Control
 
 Use these APIs to choose which request runs next while a collection is running
@@ -194,6 +206,7 @@ references/console.md
 references/environment.md
 references/folder-collection-variables.md
 references/globals.md
+references/npm-packages.md
 references/request.md
 references/response.md
 references/response-cookies.md
