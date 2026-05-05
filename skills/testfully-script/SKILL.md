@@ -107,6 +107,19 @@ After Response scripts.
 
 See [`references/response.md`](references/response.md).
 
+### Collection Runner Flow Control
+
+Use these APIs to choose which request runs next while a collection is running
+serially in Collection Runner.
+
+- `$.setNextRequest(requestIdOrTitle)` - Set the next request by id or title.
+- `pm.setNextRequest(requestIdOrTitle)` - Postman-compatible alias for
+  `$.setNextRequest()`.
+- `postman.setNextRequest(requestIdOrTitle)` - Legacy Postman-compatible alias
+  for `$.setNextRequest()`.
+
+See [`references/set-next-request.md`](references/set-next-request.md).
+
 ## How to Use
 
 Use the "Quick Reference" section above to understand the APIs and capabilities
@@ -118,5 +131,6 @@ effectively in your scripts.
 references/console.md
 references/request.md
 references/response.md
+references/set-next-request.md
 references/send-request.md
 ```
