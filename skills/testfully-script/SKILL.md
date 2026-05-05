@@ -53,6 +53,18 @@ Response scripts in the request Logs tab.
   and Web) or terminal (CLI). See
   [`references/console.md`](references/console.md).
 
+### HTTP Requests
+
+Use these APIs to send bespoke HTTP requests from scripts without changing the
+current request.
+
+- `$.sendRequest(request)` - Sends a URL or request object and returns the HTTP
+  response. See [`references/send-request.md`](references/send-request.md).
+- `pm.sendRequest(request)` - Postman-compatible alias for `$.sendRequest()`.
+  See [`references/send-request.md`](references/send-request.md).
+- `sendRequest(request)` - Legacy global alias for `$.sendRequest()`. See
+  [`references/send-request.md`](references/send-request.md).
+
 ## How to Use
 
 Use the "Quick Reference" section above to understand the APIs and capabilities
@@ -62,4 +74,5 @@ effectively in your scripts.
 
 ```
 references/console.md
+references/send-request.md
 ```
