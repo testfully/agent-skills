@@ -181,6 +181,21 @@ browser-style JavaScript sandbox.
 
 See [`references/npm-packages.md`](references/npm-packages.md).
 
+### Miscellaneous Timing APIs
+
+Use these APIs to delay script execution or schedule callbacks inside the
+Testfully sandbox.
+
+- `$.sleep(ms)` - Pause script execution for a positive number of milliseconds.
+- `setTimeout(callback, ms)` - Run a callback once after a delay.
+- `clearTimeout(timeoutId)` - Cancel a pending timeout.
+- `setInterval(callback, ms)` - Run a callback repeatedly at an interval.
+- `clearInterval(intervalId)` - Cancel a running interval.
+
+See [`references/sleep.md`](references/sleep.md),
+[`references/set-timeout.md`](references/set-timeout.md), and
+[`references/set-interval.md`](references/set-interval.md).
+
 ### Collection Runner Flow Control
 
 Use these APIs to choose which request runs next while a collection is running
@@ -211,5 +226,8 @@ references/request.md
 references/response.md
 references/response-cookies.md
 references/set-next-request.md
+references/set-interval.md
+references/set-timeout.md
 references/send-request.md
+references/sleep.md
 ```
