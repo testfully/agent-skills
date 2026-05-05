@@ -107,6 +107,25 @@ After Response scripts.
 
 See [`references/response.md`](references/response.md).
 
+### Testing And Assertions
+
+Use these APIs to record validations and write Chai-style assertions in After
+Response scripts.
+
+- `$.test(name, callback)` - Define a named validation.
+- `$.expect(value)` - Start a Chai-style assertion chain.
+- `pm.test(name, callback)` - Postman-compatible alias for `$.test()`.
+- `pm.expect(value)` - Postman-compatible alias for `$.expect()`.
+- `tests[name] = assertion` - Legacy Postman-compatible test object.
+- `responseBody` - Legacy Postman-compatible response body global.
+- `responseHeaders` - Legacy Postman-compatible response headers global.
+- `responseCode` - Legacy Postman-compatible response code global.
+- `responseTime` - Legacy Postman-compatible response time global.
+- `postman.getResponseHeader(name)` - Legacy Postman-compatible response header
+  helper.
+
+See [`references/testing-assertions.md`](references/testing-assertions.md).
+
 ### Response Cookies
 
 Use these APIs to retrieve cookies returned by the current response from After
@@ -230,4 +249,5 @@ references/set-interval.md
 references/set-timeout.md
 references/send-request.md
 references/sleep.md
+references/testing-assertions.md
 ```
