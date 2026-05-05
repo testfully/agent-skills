@@ -168,6 +168,18 @@ Use these APIs to read and update workspace-level global variables from scripts.
 
 See [`references/globals.md`](references/globals.md).
 
+### Globally Scoped Script Values
+
+Use `globalThis` to expose JavaScript constants and helper functions to scripts
+within the same collection or folder tree.
+
+- `globalThis.NAME = value` - Define a globally scoped script value.
+- `globalThis.helper = function (...) { ... }` - Define a globally scoped helper
+  function.
+- `NAME` - Read a globally scoped script value after it has been defined.
+
+See [`references/global-this.md`](references/global-this.md).
+
 ### Environment Variables
 
 Use these APIs to read and update variables from the active environment.
@@ -249,6 +261,7 @@ effectively in your scripts.
 references/console.md
 references/environment.md
 references/folder-collection-variables.md
+references/global-this.md
 references/globals.md
 references/npm-packages.md
 references/request.md
