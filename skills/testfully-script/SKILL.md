@@ -107,6 +107,21 @@ After Response scripts.
 
 See [`references/response.md`](references/response.md).
 
+### Response Cookies
+
+Use these APIs to retrieve cookies returned by the current response from After
+Response scripts.
+
+- `$.cookies.get(name)` - Get a response cookie value by name.
+- `$.cookies.has(name)` - Check whether a response cookie exists.
+- `$.cookies.toObject()` - Return response cookies as an object keyed by cookie
+  name.
+- `pm.cookies.get(name)` - Postman-compatible alias for `$.cookies.get()`.
+- `pm.cookies.has(name)` - Postman-compatible alias for `$.cookies.has()`.
+- `pm.cookies.toObject()` - Postman-compatible alias for `$.cookies.toObject()`.
+
+See [`references/response-cookies.md`](references/response-cookies.md).
+
 ### Collection Runner Flow Control
 
 Use these APIs to choose which request runs next while a collection is running
@@ -131,6 +146,7 @@ effectively in your scripts.
 references/console.md
 references/request.md
 references/response.md
+references/response-cookies.md
 references/set-next-request.md
 references/send-request.md
 ```
