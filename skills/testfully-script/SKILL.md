@@ -65,6 +65,29 @@ current request.
 - `sendRequest(request)` - Legacy global alias for `$.sendRequest()`. See
   [`references/send-request.md`](references/send-request.md).
 
+### Current Request
+
+Use these APIs to inspect the outgoing request and update request headers from
+scripts.
+
+- `$.request` - Access the current request snapshot, including method, URL,
+  headers, query params, type, and body.
+- `pm.request` - Postman-compatible alias for `$.request`.
+- `$.request.method` - Read the outgoing request HTTP method.
+- `$.request.url` - Read the outgoing request URL.
+- `$.request.type` - Read the outgoing request body type.
+- `$.request.headers` - Read the outgoing request headers.
+- `$.request.headers.add({ key, value })` - Append a request header.
+- `$.request.headers.upsert({ key, value })` - Add or update a request header.
+- `$.request.headers.remove(key)` - Remove a request header by name.
+- `$.request.params` - Read outgoing request query parameters.
+- `$.request.body` - Read the outgoing request body fields.
+- `$.request.skip()` - Skip the current request from a Before Request script.
+- `pm.execution.skipRequest()` - Postman-compatible alias for
+  `$.request.skip()`.
+
+See [`references/request.md`](references/request.md).
+
 ## How to Use
 
 Use the "Quick Reference" section above to understand the APIs and capabilities
@@ -74,5 +97,6 @@ effectively in your scripts.
 
 ```
 references/console.md
+references/request.md
 references/send-request.md
 ```
