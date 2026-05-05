@@ -139,6 +139,23 @@ Use this Postman-compatible object to inspect basic script execution metadata.
 
 See [`references/pm-info.md`](references/pm-info.md).
 
+### Iteration Data
+
+Use these APIs to read and update the current Collection Runner iteration data
+from scripts.
+
+- `$.iterationData.get(key)` - Get a value from the current iteration data.
+- `$.iterationData.has(key)` - Check whether a key exists in the current
+  iteration data.
+- `$.iterationData.set(key, value)` - Set a value in the current iteration data.
+- `$.iterationData.unset(key)` - Remove a value from the current iteration data.
+- `$.iterationData.toObject()` - Return the current iteration data as an object.
+- `$.iterationData.toJSON()` - Return the current iteration data as a JSON
+  string.
+- `pm.iterationData.*` - Postman-compatible aliases for `$.iterationData.*`.
+
+See [`references/iteration-data.md`](references/iteration-data.md).
+
 ### Multi-Step Requests
 
 Use this API to read request and response data from completed steps in a
@@ -276,6 +293,7 @@ references/environment.md
 references/folder-collection-variables.md
 references/global-this.md
 references/globals.md
+references/iteration-data.md
 references/npm-packages.md
 references/pm-info.md
 references/request.md
