@@ -139,6 +139,22 @@ Use these APIs to read and update workspace-level global variables from scripts.
 
 See [`references/globals.md`](references/globals.md).
 
+### Environment Variables
+
+Use these APIs to read and update variables from the active environment.
+
+- `$.environment.get(name)` - Get an environment variable value.
+- `$.environment.has(name)` - Check whether an environment variable exists.
+- `$.environment.set(name, value)` - Set an environment variable value.
+- `$.environment.unset(name)` - Remove an environment variable.
+- `$.environment.clear()` - Remove all environment variables.
+- `$.environment.toObject()` - Return environment variables as an object.
+- `pm.environment.*` - Postman-compatible aliases for `$.environment.*`.
+- `postman.*EnvironmentVariable(...)` - Legacy Postman-compatible environment
+  variable helpers.
+
+See [`references/environment.md`](references/environment.md).
+
 ### Collection Runner Flow Control
 
 Use these APIs to choose which request runs next while a collection is running
@@ -161,6 +177,7 @@ effectively in your scripts.
 
 ```
 references/console.md
+references/environment.md
 references/globals.md
 references/request.md
 references/response.md
