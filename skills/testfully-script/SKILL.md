@@ -126,6 +126,16 @@ Response scripts.
 
 See [`references/testing-assertions.md`](references/testing-assertions.md).
 
+### Multi-Step Requests
+
+Use this API to read request and response data from completed steps in a
+multi-step request.
+
+- `$.steps(stepIndex)` - Return request and response information for a completed
+  step by zero-based index.
+
+See [`references/steps.md`](references/steps.md).
+
 ### Response Cookies
 
 Use these APIs to retrieve cookies returned by the current response from After
@@ -249,5 +259,6 @@ references/set-interval.md
 references/set-timeout.md
 references/send-request.md
 references/sleep.md
+references/steps.md
 references/testing-assertions.md
 ```
