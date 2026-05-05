@@ -88,6 +88,25 @@ scripts.
 
 See [`references/request.md`](references/request.md).
 
+### Current Response
+
+Use these APIs to inspect the response returned by the current request from
+After Response scripts.
+
+- `$.response` - Access the current response snapshot.
+- `pm.response` - Postman-compatible alias for `$.response`.
+- `$.response.code` - Read the HTTP status code.
+- `$.response.status` - Read the HTTP status text.
+- `$.response.headers` - Read response headers.
+- `$.response.body` - Read the response body as a string.
+- `$.response.cookies` - Read response cookies.
+- `$.response.text()` - Return the response body as a string.
+- `$.response.json()` - Parse and return the response body as JSON.
+- `$.response.responseTime` - Read response duration in milliseconds.
+- `$.response.responseSize` - Read response size.
+
+See [`references/response.md`](references/response.md).
+
 ## How to Use
 
 Use the "Quick Reference" section above to understand the APIs and capabilities
@@ -98,5 +117,6 @@ effectively in your scripts.
 ```
 references/console.md
 references/request.md
+references/response.md
 references/send-request.md
 ```
