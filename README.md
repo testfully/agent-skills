@@ -1,2 +1,23 @@
-# agent-skills
-Testfully's official collection of agent skills
+# Agent Skills
+
+A collection of Testfully skills for AI coding agents. Skills are packaged
+instructions and scripts that extend agent capabilities.
+
+Skills follow the [Agent Skills](https://agentskills.io) format.
+
+## Installation
+
+```bash
+npx skills add testfully/agent-skills
+```
+
+## Skill Structure
+
+Skills are organised in `skills` directory, each in its own folder with the following structure:
+
+- `SKILL.md`: A markdown file describing the skill, its purpose, and usage
+  instructions, following the [Agent Skills](https://agentskills.io) format.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
