@@ -24,15 +24,6 @@ Use and reference this skill and guidelines when:
 - Extending Testfully's features and capabilities beyond what is available
   through the UI by leveraging custom scripts.
 
-## API Documentation Workflow
-
-When introducing a new Testfully scripting API or a related set of APIs:
-
-1. Add it to the Quick Reference section first.
-2. Add a dedicated markdown file under `references/` for the full API
-   documentation.
-3. Link each Quick Reference item to the new reference file.
-
 ## Quick Reference
 
 ### Console Logging
