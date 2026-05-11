@@ -25,23 +25,24 @@ Below are the fields you can use when authoring a folder file.
 
 ## Fields
 
-| Field            | Type                | Required | Description                                                       |
-| ---------------- | ------------------- | -------- | ----------------------------------------------------------------- |
-| `name`           | `string`            | No       | Folder name. If missing, the file name is used.                   |
-| `seq`            | `number`            | No       | Sequence order.                                                   |
-| `execution_mode` | `string`            | No       | `not_set`, `parallel`, `random`, or `serial`.                     |
-| `pre_request`    | `string`            | No       | Script executed before the folder runs.                           |
-| `post_response`  | `string`            | No       | Script executed after the folder runs.                            |
-| `timeout`        | `number`            | No       | Maximum run time in milliseconds. Omit or use `null` for default. |
-| `delay`          | `number`            | No       | Delay in milliseconds before starting the folder.                 |
-| `secure`         | `boolean`           | No       | SSL verification flag.                                            |
-| `insecure`       | `boolean`           | No       | Inverse SSL verification flag.                                    |
-| `redirects`      | `boolean \| number` | No       | Redirect behavior.                                                |
-| `history`        | `string`            | No       | History behavior.                                                 |
-| `headers`        | `Header[]`          | No       | Folder headers.                                                   |
-| `variables`      | `Variable[]`        | No       | Folder variables.                                                 |
-| `params`         | `Param[]`           | No       | Folder query parameters.                                          |
-| `proxy`          | `ProxyFile`         | No       | Proxy configuration.                                              |
+| Field              | Type                | Required | Description                                                        |
+| ------------------ | ------------------- | -------- | ------------------------------------------------------------------ |
+| `name`             | `string`            | No       | Folder name. If missing, the file name is used.                    |
+| `seq`              | `number`            | No       | Sequence order.                                                    |
+| `execution_mode`   | `string`            | No       | `not_set`, `parallel`, `random`, or `serial`.                      |
+| `pre_request`      | `string`            | No       | Script executed before the folder runs.                            |
+| `post_response`    | `string`            | No       | Script executed after the folder runs.                             |
+| `allocated_memory` | `number`            | No       | Sandbox script memory in megabytes, such as `64`. Defaults to `1`. |
+| `timeout`          | `number`            | No       | Maximum run time in milliseconds. Omit or use `null` for default.  |
+| `delay`            | `number`            | No       | Delay in milliseconds before starting the folder.                  |
+| `secure`           | `boolean`           | No       | SSL verification flag.                                             |
+| `insecure`         | `boolean`           | No       | Inverse SSL verification flag.                                     |
+| `redirects`        | `boolean \| number` | No       | Redirect behavior.                                                 |
+| `history`          | `string`            | No       | History behavior.                                                  |
+| `headers`          | `Header[]`          | No       | Folder headers.                                                    |
+| `variables`        | `Variable[]`        | No       | Folder variables.                                                  |
+| `params`           | `Param[]`           | No       | Folder query parameters.                                           |
+| `proxy`            | `ProxyFile`         | No       | Proxy configuration.                                               |
 
 In addition to the above fields, folder files also accept any of the fields
 supported by the following objects:
