@@ -499,6 +499,19 @@ $.environment.set("lastResponseUrl", data.url);
 """
 ```
 
+### `allocated_memory` field
+
+Use the `allocated_memory` field (optional) to set how much memory Testfully
+allocates to sandbox scripts for a request step. This is useful when
+`pre_request` or `post_response` scripts need more memory than the default.
+
+The value should be a number in megabytes. When omitted, Testfully allocates
+`1`.
+
+```toml
+allocated_memory = 64
+```
+
 ### `timeout` field
 
 Use the `timeout` field (optional) to limit how long the request may run, in

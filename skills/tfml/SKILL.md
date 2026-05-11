@@ -63,7 +63,7 @@ schemas in generated docs or output; use the shared definitions.
 | Authorization                              | Folder, request steps, environment            | [`references/authorization.md`](references/authorization.md)   |
 | Proxy                                      | Folder                                        | [`references/proxy.md`](references/proxy.md)                   |
 | Headers, params, variables, SSL, redirects | Folder, request steps, globals, environment   | [`references/common-objects.md`](references/common-objects.md) |
-| Request step and payloads                  | Request root and multi-step `request` entries | [`references/request-step.md`](references/request-step.md)     |
+| Request step and payloads                  | Request root and multi-step `request` entries | [`references/request-file.md`](references/request-file.md)     |
 
 ## Authoring Rules
 
