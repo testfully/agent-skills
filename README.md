@@ -11,6 +11,14 @@ Skills follow the [Agent Skills](https://agentskills.io) format.
 npx skills add testfully/agent-skills
 ```
 
+## Available Skills
+
+| Name               | Description                                                                                   | Learn more                                     |
+| ------------------ | --------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| `testfully-cli`    | Skill to use Testfully CLI.                                                                   | [Open skill](skills/testfully-cli/SKILL.md)    |
+| `testfully-script` | Skill to write Before Request or After Response scripts in Javascript and using Testfully API | [Open skill](skills/testfully-script/SKILL.md) |
+| `tfml`             | Skill to write and maintain Testfully Markup Language (TFML) files.                           | [Open skill](skills/tfml/SKILL.md)             |
+
 ## Skill Structure
 
 Skills are organised in `skills` directory, each in its own folder with the
