@@ -64,7 +64,7 @@ or inherited from a parent folder or environment, you can use it in the URL like
 this:
 
 ```toml
-url = "${baseUrl}/anything"
+url = "{{baseUrl}}/anything"
 ```
 
 ### `headers` field
@@ -79,7 +79,7 @@ For example, to set the `Content-Type` header to `application/json` and an
 ```toml
 [headers]
 Content-Type = "application/json"
-Authorization = "Bearer ${accessToken}"
+Authorization = "Bearer {{accessToken}}"
 ```
 
 If I wanted to disable the `Authorization` header without deleting it, I could
@@ -88,7 +88,7 @@ prefix it with `-` like this:
 ```toml
 [headers]
 Content-Type = "application/json"
--Authorization = "Bearer ${accessToken}"
+-Authorization = "Bearer {{accessToken}}"
 ```
 
 This way the `Authorization` header is ignored when sending the request, but I
@@ -125,7 +125,7 @@ or disable, I could use a variable for it like this:
 url = "https://httpbin.org/anything"
 [params]
 search = "testfully"
-version = "${version}"
+version = "{{version}}"
 ```
 
 ### `cookies` field
@@ -139,7 +139,7 @@ variable, we would do the following:
 
 ```toml
 [cookies]
-session_id = "${sessionId}"
+session_id = "{{sessionId}}"
 ```
 
 If I wanted to disable the `session_id` cookie without deleting it, I could
@@ -147,7 +147,7 @@ prefix it with `-` like this:
 
 ```toml
 [cookies]
--session_id = "${sessionId}"
+-session_id = "{{sessionId}}"
 ```
 
 This way the `session_id` cookie is ignored when sending the request, but I can
@@ -350,7 +350,7 @@ value = "client_credentials"
 
 [[url_encoded]]
 name = "client_id"
-value = "${clientId}"
+value = "{{clientId}}"
 ```
 
 Each `[[url_encoded]]` entry accepts the following fields:

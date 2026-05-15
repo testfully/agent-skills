@@ -67,7 +67,7 @@ example, a request file named `get-ip.toml` with the following content:
 
 ```toml
 method = "POST"
-url = "${baseUrl}/anything"
+url = "{{baseUrl}}/anything"
 json = """
 {
   "message": "Hello, HTTPBin!"
