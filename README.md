@@ -5,6 +5,15 @@ instructions and scripts that extend agent capabilities.
 
 Skills follow the [Agent Skills](https://agentskills.io) format.
 
+## Watch the Intro
+
+[![Testfully agent skills intro](assets/testfully-skills-intro.jpg)](https://www.youtube.com/watch?v=0x7hFb5w5h4)
+
+Start with the
+[Testfully agent skills intro video](https://www.youtube.com/watch?v=0x7hFb5w5h4)
+to learn how these skills fit into your AI agent workflow, when to use each
+skill, and how they help agents work with Testfully projects more effectively.
+
 ## Installation
 
 ```bash
