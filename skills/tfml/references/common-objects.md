@@ -32,6 +32,11 @@ Used by globals, folders, and environments.
 | `value`   | `string`  | No       | Variable value.                                                    |
 | `enabled` | `boolean` | No       | Whether the variable is enabled. Defaults to enabled when omitted. |
 
+### How to use
+
+Reference variables in supported string fields with the `{{variable_name}}`
+format. For example, a variable named `baseUrl` can be used as `{{baseUrl}}`.
+
 ## SSL Verification
 
 Used by folders, request steps, and environments.
